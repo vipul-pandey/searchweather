@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+html{
+  scroll-margin: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row{
+    margin: 0;
+}
+.nav-header{
+    background-color: rgb(14, 0, 27);
+}
+.navbar-brand{
+    color: crimson;
+}
+.nav-item a{
+    color: red;
+}
+.nav-item a:hover{
+    color: yellowgreen;
+}
+.txt_color{
+    color: turquoise;
+}
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color: rgb(216, 13, 199)
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+.navbar-toggler-icon{
+    background: beige;
+    border-radius: 33%;
+}
+ul li {
+    margin: 0 10px;
+    font-size: 18px
+}
+.left-main, .right-main{
+    /* background-color: cornsilk; */
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.left-main p{
+    font-size: 26px;
+    /* color: slateblue; */
+    font-weight: bolder;
+}
+.left-main h2{
+    font-size: 40px;
+    margin: 10px 0 40px 0;
+    /* text-transform: capitalize; */
+    /* color: crimson; */
+}
+
+.right-main{
+    /* background-color: rgb(153, 29, 29); */
+}
+.err_img{
+    height: 300px;
+    width: 600px;
+}
+.foot {
+    background-color: black;
+    height: 40px;
+    width: 100vw;
+    margin-top: auto;
+}
+.foot p{
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.abt_img{
+    height: 451px;
+}
+
+.right-main figure img{
+    filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.3));
+}
+.left-main button{
+    outline: none;
+    padding: 8px 17px;
+    border-radius: 26px;
+    box-shadow: 0 8px 6px -6px black;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+.left-main button:hover{
+        box-shadow: 0 8px 6px -6px #0097e6;
+}
+
+/* whether page */
+.temp_form {
+    width: 60%;
+    position: relative;
+    margin: 70px auto;
+  }
+  
+  .temp_form input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    border-radius: 30px;
+  }
+  
+  ::placeholder {
+    color: #bfc1c8;
+  }
+  
+  .temp_form input[type="submit"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding: 0 30px;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .temp_form input[type="submit"]:hover {
+    color: #009ad8;
+    background-color: #fff;
+  }
+  
+  /* temp detials show here */
+  
+  .tempInformation {
+    width: 500px;
+    margin: auto;
+    min-height: 300px;
+    background-color: #323544;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .top_layer {
+    width: 100%;
+    height: 20%;
+    background-color: #2d303d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 20px 0;
+  }
+  
+  .top_layer p {
+    color: #fff;
+    font-weight: 300;
+  }
+  
+  .main_layer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main_layer #city_name {
+    padding: 20px 0;
+    color: #bfc1c8;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  
+  .main_layer .middle_layer {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+  }
+  
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 70px;
+    font-weight: 900;
+  }
+  
+  .fa {
+    color: #009ad8;
+  }
+  
+  sup {
+    font-size: 30px;
+    margin-top: -50px;
+    top: -45px;
+  }
+  
+  .data_hide {
+    visibility: hidden;
+    transition: all 0.3s linear;
+  }
+
+
+@media (max-width: 768px) {
+    .left-main {
+      height: auto;
+      margin: 50px 0;
+    }
+  
+    .right-main {
+      height: auto;
+      margin-top: 3rem;
+    }
+    .temp_form {
+      width: auto;
+    }
+    .tempInformation {
+      width: auto;
+    }
+  
+    .main_layer .middle_layer p,
+    .main_layer .middle_layer .fa {
+      font-size: 40px;
+      font-weight: 900;
+    }
+    .err_img{
+      width: 350px;
+    }
+    .err_page{
+      font-size: 30px;
+    text-align: center;
+    }
+    sup{
+    font-size: 30px;
+    margin-top: -50px;
+    top: -31px;
+}
+}

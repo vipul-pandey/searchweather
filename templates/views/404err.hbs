@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{{>links}}
+</head>
+
+<body>
+  {{>navbar}}
+    <!-- main section -->
+    <div class="main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 left-main align-items-center ">
+                        <figure>
+                          <img class="err_img" src="img/404.png" class="abt_img" alt="about pictures" srcset="">
+                        </figure>
+                    
+                   
+                        {{!-- <p>You Are Really Amazing...</p> --}}
+                       <h2 class="err_page">{{errmsg}}</h2>
+                       <a href="/"><button>Go Back</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <!-- footer code -->
+ {{>footer}}
+
+</body>
+<script src="js/script.js"></script>
+</html>
