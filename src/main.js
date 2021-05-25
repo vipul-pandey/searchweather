@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const hbs = require('hbs');
-const port = 5500; 
+const port = process.env.PORT || 5000; 
 
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../templates/views");
@@ -32,5 +32,5 @@ app.get("*" , (req , res) => {
 });
 
 app.listen(port , () => {
-    console.log(`port is lisnening at ${port}`);
+    console.log(`port is running at ${port}`);
 });
