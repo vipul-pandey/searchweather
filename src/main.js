@@ -1,4 +1,5 @@
-const dotenv = require('dotenv')
+const dotenv = require('dotenv');
+const cors = require('cors');
 const express = require('express');
 const app = express();
 require('dotenv').config({ path: './config.env' })
@@ -9,6 +10,12 @@ const port = process.env.PORT || 5000;
 const static_path = path.join(__dirname, "../public");
 const template_path = path.join(__dirname, "../templates/views");
 const partial_path = path.join(__dirname, "../templates/partials");
+
+// app.use(cors({
+//     origin:`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=fa0df23622c79d30ff89e570705e63b0`,
+//     credentials: true,
+//     optionSuccessStatus: 20
+// }))
 
 app.set('view engine', 'hbs');
 app.set('views', template_path)

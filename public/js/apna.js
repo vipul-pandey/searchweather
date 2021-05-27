@@ -1,10 +1,16 @@
+const cors = require('cors');
 const cityName = document.getElementById('cityName');
-
 const submitBtn= document.getElementById('submitBtn');
 const city_name= document.getElementById('city_name');
 const temp_real_val= document.getElementById('temp_real_val');
 const temp_status= document.getElementById('temp_status');
 const datahide = document.querySelector('.middle_layer');
+
+app.use(cors({
+    origin:`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=fa0df23622c79d30ff89e570705e63b0`,
+    credentials: true,
+    optionSuccessStatus: 20
+}))
 
 const getInfo = async(event) => {
     event.preventDefault();
